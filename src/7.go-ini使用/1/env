@@ -1,0 +1,7 @@
+[proxy]
+path=/a
+pass=http://localhost:9091
+
+[proxy]
+path=/b
+pass=http://localhost:9092

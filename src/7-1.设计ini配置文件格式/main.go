@@ -8,7 +8,6 @@ import (
 	"os"
 	"os/signal"
 	"strings"
-	"time"
 )
 
 type webHandler struct {
@@ -48,7 +47,6 @@ func (this webHandler) ServeHTTP(writer http.ResponseWriter, request *http.Reque
 type web2Handler struct {
 }
 func (web2Handler) ServeHTTP(writer http.ResponseWriter, request *http.Request)  {
-	time.Sleep(3*time.Second)
 	writer.Write([]byte("web2"))
 }
 
