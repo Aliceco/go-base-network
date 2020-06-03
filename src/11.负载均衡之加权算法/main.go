@@ -20,12 +20,6 @@ func (web2Handler) ServeHTTP(writer http.ResponseWriter, request *http.Request) 
 	writer.Write([]byte("web2"))
 }
 
-type web3Handler struct {
-}
-func (web3Handler) ServeHTTP(writer http.ResponseWriter, request *http.Request)  {
-	writer.Write([]byte("web3"))
-}
-
 func main() {
 	// 1.监听信号
 	// 2.channel
@@ -37,9 +31,6 @@ func main() {
 	})()
 	go (func() {
 		http.ListenAndServe(":9092", web2Handler{})
-	})()
-	go (func() {
-		http.ListenAndServe(":9093", web3Handler{})
 	})()
 
 	signal.Notify(c, os.Interrupt)

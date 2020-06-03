@@ -21,7 +21,6 @@ func (* ProxyHandler) ServeHTTP(writer http.ResponseWriter, request *http.Reques
 		return
 	}
 	url,_:=url.Parse(util.LB.RoundRobinByWeight3().Host)
-	//fmt.Println(url)
 	proxy:=httputil.NewSingleHostReverseProxy(url)
 	proxy.ServeHTTP(writer, request)
 }

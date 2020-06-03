@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7a2accd-6338-47a8-af5c-f04865e3f694" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/configs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/HttpChecker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/LoadBalance.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/src/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myProxy.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/myProxy.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/functions.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/functions.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Go Application" />
         <option value="Go File" />
       </list>
     </option>

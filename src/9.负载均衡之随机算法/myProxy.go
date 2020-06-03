@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 	"net/http/httputil"
-	"net/url"
+	url2 "net/url"
 	util "network/util"
 )
 
@@ -17,11 +17,10 @@ func (* ProxyHandler) ServeHTTP(writer http.ResponseWriter, request *http.Reques
 		}
 	}()
 
-	if request.URL.Path=="/favicon.ico" { // 谷歌会访问一个图标文件，我们不做处理
-		return
-	}
-	url,_:=url.Parse(util.LB.RoundRobinByWeight3().Host)
-	//fmt.Println(url)
+	lb:=util.NewLoadBalance()
+	lb.AddServer(util.NewHttpServer("http://localhost:9091"))
+	lb.AddServer(util.NewHttpServer("http://localhost:9092"))
+	url,_:=url2.Parse(lb.SelectForRand().Host)
 	proxy:=httputil.NewSingleHostReverseProxy(url)
 	proxy.ServeHTTP(writer, request)
 }

@@ -17,11 +17,10 @@ func (* ProxyHandler) ServeHTTP(writer http.ResponseWriter, request *http.Reques
 		}
 	}()
 
-	if request.URL.Path=="/favicon.ico" { // 谷歌会访问一个图标文件，我们不做处理
-		return
-	}
-	url,_:=url.Parse(util.LB.RoundRobinByWeight3().Host)
-	//fmt.Println(url)
+	//url,_:=url2.Parse(lb.SelectByRand().Host)
+
+	//url,_:=url.Parse(util.LB.SelectByIpHash(request.RemoteAddr).Host)
+	url,_:=url.Parse(util.LB.SelectByWeightRand2().Host)
 	proxy:=httputil.NewSingleHostReverseProxy(url)
 	proxy.ServeHTTP(writer, request)
 }
