@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7a2accd-6338-47a8-af5c-f04865e3f694" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/util/HttpChecker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/LoadBalance.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myProxy.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/myProxy.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.go" afterDir="false" />
-    </list>
+    <list default="true" id="c7a2accd-6338-47a8-af5c-f04865e3f694" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +39,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../go-network" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../proxy" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -94,10 +87,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="523" y="202" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1591062686796" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1591000634180">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1591231549443">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1591000634180" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1360.728@0.0.1536.824" timestamp="1591231549443" />
     <state x="270" y="54" key="SettingsEditor" timestamp="1591000588419">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
